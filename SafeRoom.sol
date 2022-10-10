@@ -3,18 +3,22 @@ pragma solidity 0.8.9;
 
 contract SafeRoom {
     
-    address public owner;
+    address payable public owner;
     uint public initialBal;
     
-    constructor (_initialBal) {
-        assert(msg.value == _initialBal);
-        owner = msg.sender;
+    constructor() payable {
+        initialBal = msg.value;
+        owner = payable(msg.sender);
     }
     
     
-    function transfer (_to, amount) {
+    function transfer (address _to, uint amount) public  {
         assert(tx.origin == owner);
-        (success,) = call{value:initialBal}("");
+        (bool success,) = _to.call{value:amount}("");
         require(success, "Transfer Failed");
+    }
+
+    function getBalance() public view returns (uint bal){
+        bal = address(this).balance;
     }
 }
