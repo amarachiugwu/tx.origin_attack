@@ -13,7 +13,7 @@ contract SafeRoom {
     
     
     function transfer (address _to, uint amount) public  {
-        assert(tx.origin == owner);
+        require(tx.origin == owner, 'You are not the owner');
         (bool success,) = _to.call{value:amount}("");
         require(success, "Transfer Failed");
     }

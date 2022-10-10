@@ -96,11 +96,11 @@
 	},
 	"sources": {
 		"SafeRoom.sol": {
-			"keccak256": "0x4a948ead3b233b1a8b1b9e77f45089f852128662e2215b5ceaa2370e149df80b",
+			"keccak256": "0xa0d87ad133771e08ed5343e6f561dc6f9ce01e230a2a31b369cb391bdeb8ba3b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://67e43ee37383043cb2c8a35edfdd164bece598335ea68c3f4d96ece7475a2f6e",
-				"dweb:/ipfs/QmWFfc7QK3ypQqPCFtUmabCQGcbmU82FZ6wuujTUbnC1rK"
+				"bzz-raw://a9a45bd53149b6e4eb8f3e57f33a7600dc7e661fea19f1e7bf7a5c0661934a84",
+				"dweb:/ipfs/QmcYYCih1ZJ3SuvU5ahjFCpVBAV6QA44T2cyT5yTbV2SNd"
 			]
 		}
 	},
